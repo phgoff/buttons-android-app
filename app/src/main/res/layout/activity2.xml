@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="RESULT"
+        android:textColor="#41f441"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/nameshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvshow"
+        android:text="NAME: "
+        android:textSize="20sp"
+        android:textColor="#419af4"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/namevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvshow"
+        android:layout_toEndOf="@+id/nameshow"
+        android:layout_toRightOf="@+id/nameshow"
+        android:gravity="center"
+        android:text=" "
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/resshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOU ARE: "
+        android:textSize="20sp"
+        android:textColor="#419af4"
+        android:layout_below="@id/nameshow"/>
+
+    <TextView
+        android:id="@+id/radiovalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namevalue"
+        android:text=""
+        android:hint="radio"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/resshow"
+        />
+    <TextView
+        android:id="@+id/cbshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Selected: "
+        android:textSize="20sp"
+        android:layout_below="@id/resshow"
+        android:textColor="#419af4"/>
+    <TextView
+        android:id="@+id/cshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" checkbox"
+        android:textSize="20sp"
+        android:layout_below="@id/resshow"
+        android:layout_toRightOf="@id/cbshow"
+        />
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#6f7063"
+        android:textColor="#f4f441"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="24dp"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp"
+        android:paddingTop="20dp"
+
+        android:text="Back" />
+
+</RelativeLayout>

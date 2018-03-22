@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phgof.app_withbutton.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DYMICER"
+            android:textColor="#F15542"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <EditText
+            android:id="@+id/tvname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:hint="ENTER YOUR NAME"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your foods"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:textColor="#f48941" />
+        <CheckBox
+            android:id="@+id/checkbox_meat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="meat"
+            android:layout_gravity="bottom" />
+        <CheckBox
+            android:id="@+id/checkbox_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="cheese"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_meat"
+            android:layout_gravity="bottom" />
+        <CheckBox
+            android:id="@+id/checkbox_rice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="rice"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_meat"
+            android:layout_gravity="bottom" />
+        <CheckBox
+            android:id="@+id/checkbox_coke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="coke"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_meat"
+            android:layout_gravity="bottom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your interested"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:textColor="#f45b41"/>
+
+        <RadioGroup
+            android:id="@+id/radiotypes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/piraterd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="PIRATE" />
+            <RadioButton
+                android:id="@+id/ninjard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="NINJA" />
+            <RadioButton
+                android:id="@+id/samuraird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAMIRAI" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv1"
+            app:layout_constraintRight_toRightOf="@id/tv1"
+            app:layout_constraintLeft_toLeftOf="@id/tv1"
+            android:text="Enter"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_selector" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="© 2018 phgoff All Rights Reserved"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>
